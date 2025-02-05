@@ -6,9 +6,8 @@
 curl --url smtp://localhost:1025 \
      --mail-from sender@example.com \
      --mail-rcpt recipient@example.com \
-     --upload-file email.txt
+     --upload-file ./mailpit/email.txt
 ```
-
 
 ## Inbox
 
