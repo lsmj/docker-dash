@@ -1,8 +1,11 @@
 # docker-dash
 
+A lightweight solution for running Docker and start services in the Terminal without having to install and run Docker Desktop.
+
 ## Installation
 
 ```bash
+# Using Homebrew (macOS)
 brew install colima docker
 ```
 
