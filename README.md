@@ -1,6 +1,6 @@
 # docker-dash
 
-A lightweight solution for running Docker and start services in the Terminal without having to install and run Docker Desktop.
+A lightweight solution for running Docker and starting/stopping individual services in the terminal without having to install and run Docker Desktop.
 
 ## Installation
 
