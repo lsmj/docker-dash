@@ -21,6 +21,8 @@ serviceup () {
 
   # Save current directory
   ORIGINAL_DIR=$(pwd)
+
+  # Path to docker-dash
   TARGET_DIR="$HOME/node/docker-dash/$1"
 
   # Check if directory exists
@@ -44,6 +46,8 @@ servicedown () {
 
   # Save current directory
   ORIGINAL_DIR=$(pwd)
+
+  # Path to docker-dash
   TARGET_DIR="$HOME/node/docker-dash/$1"
 
   # Check if directory exists
