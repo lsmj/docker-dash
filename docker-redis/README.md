@@ -3,7 +3,7 @@
 ## Log into the container's Redis service
 
 ```bash
-docker exec -it redis_container redis-cli
+docker exec -it dockerdash_redis redis-cli
 ```
 
 ## Credentials in Laravel (.env)

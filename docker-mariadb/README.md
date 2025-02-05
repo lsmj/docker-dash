@@ -3,7 +3,7 @@
 ## Log into the container's mariadb service
 
 ```bash
-docker exec -it mariadb_container mariadb -u root -p
+docker exec -it dockerdash_mariadb mariadb -u root -p
 ```
 
 ## Credentials for Table Plus

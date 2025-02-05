@@ -1,14 +1,14 @@
 services:
   mariadb:
     image: mariadb:latest
-    container_name: mariadb_container
+    container_name: dockerdash_mariadb
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: db_pw
     ports:
       - "3306:3306"
     volumes:
-      - mariadb_data:/var/lib/mysql
+      - dockerdash_mariadb:/var/lib/mysql
 
 volumes:
-  mariadb_data:
+  dockerdash_mariadb:
