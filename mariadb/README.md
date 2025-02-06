@@ -1,9 +1,11 @@
 # MariaDB
 
-## Log into the container's mariadb service
+## Interfacing with mariadb
 
 ```bash
-docker exec -it dockerdash_mariadb mariadb -u root -p
+mariadb -h 127.0.0.1 -P 3306 -u root -p
+
+mariadb -h 127.0.0.1 -P 3306 -u root -p -e "CREATE DATABASE my_database;"
 ```
 
 ## Credentials for Table Plus
