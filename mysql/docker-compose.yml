@@ -6,7 +6,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: db_pw
     ports:
-      - "3306:3306"
+      - "3307:3306"
     volumes:
       - dockerdash_mysql:/var/lib/mysql
 

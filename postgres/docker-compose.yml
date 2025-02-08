@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: dockerdash_postgres
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: db_pw
+    ports:
+      - "3308:3306"
+    volumes:
+      - dockerdash_postgres:/var/lib/postgresql/data
+
+volumes:
+  dockerdash_postgres:
