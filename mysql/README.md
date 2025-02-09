@@ -1,11 +1,10 @@
 # MySQL
 
-## Interfacing with MySQL
+## Logging into the MySQL container
 
 ```bash
-mysql -h 127.0.0.1 -P 3307 -u root -p
-
-mysql -h 127.0.0.1 -P 3307 -u root -p -e "CREATE DATABASE my_database;"
+# This runs "docker exec -it dockerdash_mysql mysql"
+mysql
 ```
 
 ## Credentials for Table Plus
@@ -14,6 +13,5 @@ mysql -h 127.0.0.1 -P 3307 -u root -p -e "CREATE DATABASE my_database;"
 Host: 127.0.0.1
 Port: 3307
 Username: root
-Password: db_pw
-Database: db_name
+Password: pw
 ```

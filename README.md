@@ -1,72 +1,19 @@
 # docker-dash
 
-A lightweight solution for running Docker and starting/stopping individual services in the terminal without having to install and run Docker Desktop.
+A lightweight Docker solution for managing virtualized database services without running Docker Desktop.
 
 ## Installation
 
+Clone the project and source scripts.sh in your .bashrc or .zshrc
+
+## Dependencies: colima and docker CLI
+
 ```bash
-# Using Homebrew (macOS)
+# Using Homebrew
 brew install colima docker
 ```
 
-## Bash scripts
-
-```bash
-alias dockerup='colima start'
-alias dockerdown='colima stop'
-
-serviceup () {
-  # If no params
-  if [ $# -eq 0 ]; then
-    echo 'Usage: serviceup [service]'
-    return 1
-  fi
-
-  # Save current directory
-  ORIGINAL_DIR=$(pwd)
-
-  # Path to docker-dash
-  TARGET_DIR="$HOME/node/docker-dash/$1"
-
-  # Check if directory exists
-  if [ ! -d "$TARGET_DIR" ]; then
-    echo "Error: Directory $TARGET_DIR does not exist"
-    return 1
-  fi
-
-  # Change to target directory
-  cd "$TARGET_DIR" || return
-  docker compose up -d --build
-  cd "$ORIGINAL_DIR" || return
-}
-
-servicedown () {
-  # If no params
-  if [ $# -eq 0 ]; then
-    echo 'Usage: servicedown [service]'
-    return 1
-  fi
-
-  # Save current directory
-  ORIGINAL_DIR=$(pwd)
-
-  # Path to docker-dash
-  TARGET_DIR="$HOME/node/docker-dash/$1"
-
-  # Check if directory exists
-  if [ ! -d "$TARGET_DIR" ]; then
-    echo "Error: Directory $TARGET_DIR does not exist"
-    return 1
-  fi
-
-  # Change to target directory
-  cd "$TARGET_DIR" || return
-  docker compose down
-  cd "$ORIGINAL_DIR" || return
-}
-```
-
-## Run Docker
+## Running Docker in the background
 
 ```bash
 dockerup
@@ -88,4 +35,12 @@ servicedown redis
 
 ```bash
 dockerdown
+```
+
+## Refresh image with new settings
+
+```bash
+# cd into service location (/docker-dash/mariadb) and run
+docker compose down --rmi all --volumes --remove-orphans
+docker compose up -d --build
 ```

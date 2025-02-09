@@ -4,7 +4,7 @@ services:
     container_name: dockerdash_mariadb
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: db_pw
+      MYSQL_ROOT_PASSWORD: pw
     ports:
       - "3306:3306"
     volumes:
