@@ -1,6 +1,8 @@
+![Image](https://github.com/user-attachments/assets/436a2fbb-4cb5-4250-8124-4ebacaa1ed5b)
+
 # docker-dash
 
-A lightweight Docker solution for managing virtualized database services without Docker Desktop. The goal is to get the ease and speed of using something like DBngn, without being contrained by what services are being supported. I wanted to utilize the effortlessness of running a Docker image instead of having to install something locally, but without using Docker Desktop and without dealing with scaffolding Docker containers for each new project.
+A lightweight Docker solution for managing virtualized database services without Docker Desktop. The goal is to get the ease and speed of using something like DBngn, without being constrained by what services are being supported, and to utilize the effortlessness and system resource mindfulness of Docker containers, without dealing with Docker scaffolding.
 
 ## Installation
 
