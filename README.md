@@ -6,29 +6,32 @@ A lightweight Docker solution for managing virtualized database services without
 
 Clone the project and source scripts.sh in your .bashrc or .zshrc
 
-## Dependencies: colima and docker CLI
+## Install dependencies
 
 ```bash
-# Using Homebrew
 brew install colima docker
 ```
 
-## Running Docker in the background
+## Start up Docker
 
 ```bash
 dockerup
 ```
 
-## Usage
+## Start service
 
 ```bash
-serviceup mailpit
 serviceup mariadb
-serviceup redis
+```
 
-servicedown mailpit
+## Interaction and settings
+
+More info in the service README.md files
+
+## Stop service
+
+```bash
 servicedown mariadb
-servicedown redis
 ```
 
 ## Shut down Docker
@@ -37,10 +40,10 @@ servicedown redis
 dockerdown
 ```
 
-## Refresh image with new settings
+## Hard reset of container
 
 ```bash
-# cd into service location (/docker-dash/mariadb) and run
+# cd into the service location (../docker-dash/mariadb) and run
 docker compose down --rmi all --volumes --remove-orphans
 docker compose up -d --build
 ```

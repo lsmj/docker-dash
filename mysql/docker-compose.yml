@@ -11,4 +11,4 @@ services:
       - dockerdash_mysql:/var/lib/mysql
 
 volumes:
-  dockerdash_mysql:
+  dockerdash_mysql: {}

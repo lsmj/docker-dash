@@ -11,4 +11,4 @@ services:
       - dockerdash_mariadb:/var/lib/mysql
 
 volumes:
-  dockerdash_mariadb:
+  dockerdash_mariadb: {}
