@@ -12,7 +12,7 @@ The instructions are macOS only using Homebrew, but the idea is easily transfera
 
 ## Installation
 
-Clone the project and source scripts.sh in your .bashrc or .zshrc. Be aware that some aliases added by scripts.sh (like mysql and redis) might conflict with existing systems, in which case they should be renamed or commented out. The intended usage is to uninstall these systems all together and use these aliases as virtualized drop-in replacements for the real thing.
+Clone the project and source scripts.sh in your .bashrc or .zshrc. Be aware that some aliases added by scripts.sh (like mysql and redis) might conflict with existing systems, in which case they should be renamed or commented out. The idea is to uninstall these systems all together and use these aliases and services as virtualized drop-in replacements for the real thing.
 
 ## Install dependencies
 
