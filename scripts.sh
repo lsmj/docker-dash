@@ -5,10 +5,10 @@ alias dockerup='colima start'
 alias dockerdown='colima stop'
 
 # Aliases to log into containerized services (change these aliases if you are running local services with the same name)
-alias mysql='docker exec -it dockerdash_mysql mysql'
-alias mariadb='docker exec -it dockerdash_mariadb mariadb'
-alias psql='docker exec -it dockerdash_postgres psql'
-alias redis='docker exec -it dockerdash_redis redis-cli'
+alias dd-mysql='docker exec -it dockerdash_mysql mysql'
+alias dd-mariadb='docker exec -it dockerdash_mariadb mariadb'
+alias dd-psql='docker exec -it dockerdash_postgres psql'
+alias dd-redis-cli='docker exec -it dockerdash_redis redis-cli'
 
 
 serviceup () {
